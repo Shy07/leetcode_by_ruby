@@ -1,7 +1,4 @@
-# dev fast
+# dev and run fast
 def add_digits(num)
-  loop do
-    return num if num.to_s.length == 1
-    num = num.to_s.split('').inject(0) { |m, s| m + s.to_i }
-  end
+  num == 0 ? 0 : (num % 9 == 0 ? 9 : num % 9)
 end
